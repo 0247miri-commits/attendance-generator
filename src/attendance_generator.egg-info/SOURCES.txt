@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+src/attendance_generator/__init__.py
+src/attendance_generator/models.py
+src/attendance_generator/pipeline.py
+src/attendance_generator/quality.py
+src/attendance_generator.egg-info/PKG-INFO
+src/attendance_generator.egg-info/SOURCES.txt
+src/attendance_generator.egg-info/dependency_links.txt
+src/attendance_generator.egg-info/requires.txt
+src/attendance_generator.egg-info/top_level.txt
+tests/test_models.py
+tests/test_quality.py
