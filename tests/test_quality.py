@@ -39,3 +39,20 @@ def test_error_blocks_current_extraction():
     ))
     result = assess_extraction(report, required_fields=("employee_code", "period"))
     assert result.status == ReviewStatus.REJECTED
+    
+def test_unknown_report_type_requires_human_review():
+    report = ExtractedReport(
+        "sample.pdf",
+        ReportType.UNKNOWN
+    )
+
+    report.add_field(
+        ExtractedField("period", "2026-01", 0.99)
+    )
+
+    result = assess_extraction(
+        report,
+        required_fields=("period",)
+    )
+
+    assert result.status == ReviewStatus.NEEDS_HUMAN_REVIEW
