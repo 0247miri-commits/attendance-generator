@@ -4,6 +4,11 @@ src/attendance_generator/__init__.py
 src/attendance_generator/models.py
 src/attendance_generator/pipeline.py
 src/attendance_generator/quality.py
+src/attendance_generator/report_a.py
+src/attendance_generator/report_b.py
+src/attendance_generator/synthetic_models.py
+src/attendance_generator/units.py
+src/attendance_generator/work_profile.py
 src/attendance_generator.egg-info/PKG-INFO
 src/attendance_generator.egg-info/SOURCES.txt
 src/attendance_generator.egg-info/dependency_links.txt
@@ -11,3 +16,8 @@ src/attendance_generator.egg-info/requires.txt
 src/attendance_generator.egg-info/top_level.txt
 tests/test_models.py
 tests/test_quality.py
+tests/test_report_a.py
+tests/test_report_b.py
+tests/test_synthetic_models.py
+tests/test_units.py
+tests/test_work_profile.py
